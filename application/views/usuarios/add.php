@@ -1,14 +1,12 @@
-
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-    </section>
-    <!-- Main content -->
-    <section class="content">
-        <!-- Default box -->
-        <div class="box box-solid">
-            <div class="box-body">
+<div id="panel-1" class="panel">
+            <div class="panel-hdr">
+                <h2>Nuevo Usuario</h2>
+                <div class="panel-toolbar">
+                    <button class="btn btn-panel waves-effect waves-themed" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Colapsar"></button>
+                </div>
+            </div>
+            <div class="panel-container show">
+                <div class="panel-content">
                 <div class="row">
                     <div class="col-md-12">
                         <?php if($this->session->flashdata("error")):?>
@@ -65,10 +63,7 @@
                     
                     </div>
                 </div>
-            <!-- /.box-body -->
-        </div>
-        <!-- /.box -->
-    </section>
-    <!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
+                </div>
+            </div>
+            </div>
+

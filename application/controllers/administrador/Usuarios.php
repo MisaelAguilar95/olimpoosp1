@@ -21,20 +21,6 @@ class Usuarios extends CI_Controller {
 		
 	}
 
-	public function add(){
-		$data  = array(
-			'roles' => $this->Usuarios_model->getRoles(), 
-		);
-		$data['boton_minified'] = $this->componentes->boton_mini();
-		$data['botones_conf'] = $this->componentes->botones_conf();
-		$data['ajustes'] = $this->componentes->ajustes();
-		$this->load->view('header');
-		$this->load->view('menu',$data);
-		$this->load->view("admin/usuarios/add",$data);		
-		$this->load->view('footer',$data);
-		
-		
-	}
 
 	public function store(){
 
@@ -86,7 +72,7 @@ class Usuarios extends CI_Controller {
 		$data['ajustes'] = $this->componentes->ajustes();
 		$this->load->view('header');
 		$this->load->view('menu',$data);
-		$this->load->view("admin/usuarios/edit",$data);
+		$this->load->view("usuarios/edit",$data);
 		$this->load->view('footer',$data);
 
 }
@@ -130,13 +116,7 @@ class Usuarios extends CI_Controller {
 		$data  = array(
 			'usuarios' => $this->Usuarios_model->getUsuarios(), 
 		);
-		$data['boton_minified'] = $this->componentes->boton_mini();
-		$data['botones_conf'] = $this->componentes->botones_conf();
-		$data['ajustes'] = $this->componentes->ajustes();
-		$this->load->view('header');
-		$this->load->view('menu',$data);
-		$this->load->view("usuarios\usuario_nuevo",$data);		
-		$this->load->view('footer',$data);
+		redirect(base_url()."usuarios");
 		
 	}
 

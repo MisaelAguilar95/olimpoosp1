@@ -40,14 +40,19 @@ class Inicio extends CI_Controller {
 		$data  = array(
 			'usuarios' => $this->Usuarios_model->getUsuarios(), 
 		);
+		$dato  = array(
+			'roles' => $this->Usuarios_model->getRoles(), 
+		);
 		$data['boton_minified'] = $this->componentes->boton_mini();
 		$data['botones_conf'] = $this->componentes->botones_conf();
 		$data['ajustes'] = $this->componentes->ajustes();
 		$this->load->view('header');
 		$this->load->view('menu',$data);
-		$this->load->view("usuarios\usuario_nuevo",$data);		
-		$this->load->view('footer',$data);
-	}
+		$this->load->view("usuarios/add",$dato);
+		$this->load->view("usuarios/usuario_nuevo",$data);		
+		$this->load->view('footer',$data);		
+		}
+	
 
 	public function configuraciones(){
 		$data['boton_minified'] = $this->componentes->boton_mini();
