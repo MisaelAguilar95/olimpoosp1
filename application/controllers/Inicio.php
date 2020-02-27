@@ -8,6 +8,7 @@ class Inicio extends CI_Controller {
 		parent::__construct();
 		$this->load->library('componentes');
 		$this->load->model("Usuarios_model");
+		$this->load->model("Clientes_model");
 		// $nombre_usuario = $this->session->userdata('nombre');
 		// if(!isset($nombre_usuario)){
 		// 	header('Location: '.base_url().'login');
@@ -76,13 +77,19 @@ class Inicio extends CI_Controller {
 	}
 
 	public function clientes(){
+	
+		$data  = array(
+			'clientes' => $this->Clientes_model->getClientes(), 
+		);
 		$data['boton_minified'] = $this->componentes->boton_mini();
 		$data['botones_conf'] = $this->componentes->botones_conf();
 		$data['ajustes'] = $this->componentes->ajustes();
 		$this->load->view('header');
 		$this->load->view('menu',$data);
-		$this->load->view('clientes/cliente_nuevo');
-		$this->load->view('footer',$data);
+		$this->load->view("clientes/add");
+		$this->load->view("clientes/cliente_nuevo",$data);	
+			
+		$this->load->view('footer',$data);	
 	}
 
 	public function pagos(){
