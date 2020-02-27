@@ -37,8 +37,8 @@
                                             <td><?php echo $usuario->rol;?></td>
                                             <td>
                                                 <div class="btn-group">
-                                                    <button type="button" class="btn btn-info btn-view-usuario" data-toggle="modal" data-target="#modal-default" value="<?php echo $usuario->id;?>">
-                                                        <span class="fa fa-search"></span>
+                                                    <button type="button" class="btn btn-success waves-effect waves-themed" data-toggle="modal" data-target="#modal-default" value="<?php echo $usuario->id;?>">
+                                                        <span class="fa fa-search m-r-5"></span>
                                                     </button>
                                                     <a href="<?php echo base_url()?>administrador/usuarios/edit/<?php echo $usuario->id;?>" class="btn btn-warning"><span class="fa fa-pencil"></span></a>
                                                     <a href="<?php echo base_url();?>administrador/usuarios/delete/<?php echo $usuario->id;?>" class="btn btn-danger btn-remove"><span class="fa fa-remove"></span></a>
