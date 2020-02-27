@@ -41,7 +41,7 @@
                                                         <span class="fa fa-search m-r-5"></span>
                                                     </button>
                                                     <a href="<?php echo base_url()?>administrador/usuarios/edit/<?php echo $usuario->id;?>" class="btn btn-warning"><span class="fa fa-pencil"></span></a>
-                                                    <a href="<?php echo base_url();?>administrador/usuarios/delete/<?php echo $usuario->id;?>" class="btn btn-danger btn-remove"><span class="fa fa-remove"></span></a>
+                                                    <a href="<?php echo base_url();?>administrador/usuarios/delete/<?php echo $usuario->id;?>" class="btn btn-danger btn-remove"><i class="fa fa-times" aria-hidden="true"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
