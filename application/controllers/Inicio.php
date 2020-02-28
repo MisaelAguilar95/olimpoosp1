@@ -88,7 +88,6 @@ class Inicio extends CI_Controller {
 		$this->load->view('menu',$data);
 		$this->load->view("clientes/add");
 		$this->load->view("clientes/cliente_nuevo",$data);	
-			
 		$this->load->view('footer',$data);	
 	}
 

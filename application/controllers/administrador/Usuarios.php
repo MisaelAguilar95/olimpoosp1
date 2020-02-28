@@ -7,7 +7,7 @@ class Usuarios extends CI_Controller {
 		parent::__construct();
 		$this->load->model("Usuarios_model");
 		$this->load->library('componentes');
-		$this->load->model("Usuarios_model");
+		
 	}
 
 	public function index(){
@@ -48,7 +48,7 @@ class Usuarios extends CI_Controller {
 		}
 		else{
 			$this->session->set_flashdata("error","No se pudo guardar la informacion");
-			redirect(base_url()."administrador/usuarios/add");
+			redirect(base_url()."usuarios/add");
 		}
 
 		

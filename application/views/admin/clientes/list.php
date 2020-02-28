@@ -43,10 +43,10 @@
                                             <td><?php echo $cliente->nombre;?></td>
                                             <td><?php echo $cliente->tipocliente;?></td>
                                             <td><?php echo $cliente->tipodocumento;?></td>
-                                            <td><?php echo $cliente->num_documento;?></td>
+                                            <td><?php echo $cliente->rfc;?></td>
                                             <td><?php echo $cliente->telefono;?></td>
                                             <td><?php echo $cliente->direccion;?></td>
-                                            <?php $datacliente = $cliente->id."*".$cliente->nombre."*".$cliente->tipocliente."*".$cliente->tipodocumento."*".$cliente->num_documento."*".$cliente->telefono."*".$cliente->direccion;?>
+                                            <?php $datacliente = $cliente->id."*".$cliente->nombre."*".$cliente->tipocliente."*".$cliente->tipodocumento."*".$cliente->rfc."*".$cliente->telefono."*".$cliente->direccion;?>
                                             <td>
                                                 <div class="btn-group">
                                                     <button type="button" class="btn btn-info btn-view-cliente" data-toggle="modal" data-target="#modal-default" value="<?php echo $datacliente?>">

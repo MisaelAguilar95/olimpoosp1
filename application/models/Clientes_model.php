@@ -17,11 +17,11 @@ class Clientes_model extends CI_Model {
 
 	}
 	public function save($data){
-		return $this->db->insert("clientes",$data);
+		return $this->db->insert("cliente",$data);
 	}
 	public function update($id,$data){
 		$this->db->where("id",$id);
-		return $this->db->update("clientes",$data);
+		return $this->db->update("cliente",$data);
 	}
 
 }

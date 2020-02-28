@@ -172,8 +172,8 @@
                                 <tr>
                                     <td><?php echo $cliente->id;?></td>
                                     <td><?php echo $cliente->nombre;?></td>
-                                    <td><?php echo $cliente->num_documento;?></td>
-                                    <?php $datacliente = $cliente->id."*".$cliente->nombre."*".$cliente->tipocliente."*".$cliente->tipodocumento."*".$cliente->num_documento."*".$cliente->telefono."*".$cliente->direccion;?>
+                                    <td><?php echo $cliente->rfc;?></td>
+                                    <?php $datacliente = $cliente->id."*".$cliente->nombre."*".$cliente->tipocliente."*".$cliente->tipodocumento."*".$cliente->rfc."*".$cliente->telefono."*".$cliente->direccion;?>
                                     <td>
                                         <button type="button" class="btn btn-success btn-check" value="<?php echo $datacliente;?>"><span class="fa fa-check"></span></button>
                                     </td>

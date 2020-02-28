@@ -64,7 +64,7 @@
                             </div>
                             <div class="form-group <?php echo form_error("numero") != false ? 'has-error':'';?>">
                                 <label for="numero">Numero del Documento:</label>
-                                <input type="text" class="form-control" id="numero" name="numero" value="<?php echo form_error("numero") !=false ? set_value("numero") : $cliente->num_documento;?>">
+                                <input type="text" class="form-control" id="numero" name="numero" value="<?php echo form_error("numero") !=false ? set_value("numero") : $cliente->rfc;?>">
                                 <?php echo form_error("numero","<span class='help-block'>","</span>");?>
                             </div>
                             

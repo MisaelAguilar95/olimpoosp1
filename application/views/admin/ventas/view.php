@@ -19,7 +19,7 @@
 		<b>COMPROBANTE</b> <br>
 		<b>Tipo de Comprobante:</b> <?php echo $venta->tipocomprobante;?><br>
 		<b>Serie:</b> <?php echo $venta->serie;?><br>
-		<b>Nro de Comprobante:</b><?php echo $venta->num_documento;?><br>
+		<b>Nro de Comprobante:</b><?php echo $venta->rfc;?><br>
 		<b>Fecha</b> <?php echo $venta->fecha;?>
 	</div>	
 </div>

@@ -53,7 +53,7 @@
                                             <td><?php echo $venta->id;?></td>
                                             <td><?php echo $venta->nombre;?></td>
                                             <td><?php echo $venta->tipocomprobante;?></td>
-                                            <td><?php echo $venta->num_documento;?></td>
+                                            <td><?php echo $venta->rfc;?></td>
                                             <td><?php echo $venta->fecha;?></td>
                                             <td><?php echo $venta->total;?></td>
                                             <td>
